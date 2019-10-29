@@ -1,0 +1,37 @@
+{
+  "name": "@dataparty/bouncer-db",
+  "private": false,
+  "version": "1.0.0",
+  "description": "dataparty bouncer db implementing CRUFL",
+  "author": "RosHub Inc. <code@roshub.io>",
+  "license": "Apache-2.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/datapartyjs/bouncer-db.git"
+  },
+  "main": "src/db.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@octokit/rest": "16.23.2",
+    "async": "^2.6.0",
+    "circular-json": "^0.5.5",
+    "crypto-random-string": "^3.0.0",
+    "debug": "^3.1.0",
+    "deep-set": "^1.0.1",
+    "hoek": "^5.0.3",
+    "json-schema-to-typescript": "^6.0.2",
+    "moment": "^2.22.1",
+    "mongoose": "5.4.10",
+    "mongoose-schema-jsonschema": "1.2.1",
+    "promise": "8.0.1",
+    "request": "2.85.0",
+    "@dataparty/bouncer-model": "1.0.0"
+  }
+}
