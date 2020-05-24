@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 mongoose.Promise = Promise
 require('mongoose-schema-jsonschema')(mongoose)
 mongoose.plugin(require("mongoose-ajv-plugin"))
-
+const BouncerModel = require('@dataparty/bouncer-model')
 
 const Bouncer = require('./bouncer')
 const AdminBouncer = require('./bouncer/admin-bouncer')
