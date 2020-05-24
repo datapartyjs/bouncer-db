@@ -1,11 +1,15 @@
 const mongoose = require('mongoose')
 mongoose.Promise = Promise
-require('mongoose-schema-jsonschema')(mongoose);
+require('mongoose-schema-jsonschema')(mongoose)
+mongoose.plugin(require("mongoose-ajv-plugin"))
+
+
 const Bouncer = require('./bouncer')
 const AdminBouncer = require('./bouncer/admin-bouncer')
 const debug = require('debug')('bouncer.db')
 
 if(debug.enabled){ mongoose.set('debug', true) }
+
 
 class Db {
   constructor (uri, options) {
@@ -25,6 +29,20 @@ class Db {
 
   get types(){
     return this.model
+  }
+
+  addBouncerModels(model){
+    for(let schema of model.JSONSchema){
+      debug('addBouncerModels', schema.title)
+
+      const generic = BouncerModel.Model.generate({
+        JSONSchema: schema,
+        Permissions: model.IndexSettings[schema.title],
+        IndexSettings: model.IndexSettings[schema.title]
+      })
+
+      this.addModel(generic)
+    }
   }
 
   addModels({Types}){
