@@ -37,7 +37,7 @@ class Db {
 
       const generic = BouncerModel.Model.generate({
         JSONSchema: schema,
-        Permissions: model.IndexSettings[schema.title],
+        Permissions: model.Permissions[schema.title],
         IndexSettings: model.IndexSettings[schema.title]
       })
 
