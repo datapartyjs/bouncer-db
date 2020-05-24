@@ -181,6 +181,8 @@ module.exports = class Crufler {
       // create list of prepped msgs to write to backend
       const preppedMsgs = msgs.map(msg => this.redactWrite(msg))
 
+      debug('prepped', preppedMsgs)
+
       // creates new msgs in one call & gets mongo msgs with ids back
       mgoMsgs = await this.collection.insertMany(preppedMsgs)
 
