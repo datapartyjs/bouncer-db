@@ -1,7 +1,7 @@
 {
   "name": "@dataparty/bouncer-db",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "dataparty bouncer db implementing CRUFL",
   "author": "RosHub Inc. <code@roshub.io>",
   "license": "Apache-2.0",
