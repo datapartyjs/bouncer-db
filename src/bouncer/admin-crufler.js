@@ -30,7 +30,8 @@ module.exports = class AdminCrufler extends Crufler {
   }
 
   redactWrite (msg) {
-    return msg
+    const { _id, __v, $meta, ...rawmsg } = msg || {}
+    return rawmsg
   }
 
   own (msg) {

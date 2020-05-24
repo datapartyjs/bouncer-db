@@ -1,7 +1,7 @@
 {
   "name": "@dataparty/bouncer-db",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "dataparty bouncer db implementing CRUFL",
   "author": "RosHub Inc. <code@roshub.io>",
   "license": "Apache-2.0",
@@ -19,19 +19,12 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@octokit/rest": "16.23.2",
-    "async": "^2.6.0",
-    "circular-json": "^0.5.5",
-    "crypto-random-string": "^3.0.0",
+    "@dataparty/bouncer-model": "1.4.3",
     "debug": "^3.1.0",
-    "deep-set": "^1.0.1",
-    "hoek": "^5.0.3",
+    "@hapi/hoek": "^9.0.2",
     "json-schema-to-typescript": "^6.0.2",
-    "moment": "^2.22.1",
-    "mongoose": "5.7.7",
-    "mongoose-schema-jsonschema": "1.2.1",
-    "promise": "8.0.1",
-    "request": "2.85.0",
-    "@dataparty/bouncer-model": "1.0.0"
+    "mongoose": "5.9.15",
+    "mongoose-ajv-plugin": "sevenbitbyte/mongoose-ajv-plugin#dep-update",
+    "mongoose-schema-jsonschema": "1.2.1"
   }
 }
