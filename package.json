@@ -23,7 +23,7 @@
     "debug": "^3.1.0",
     "@hapi/hoek": "^9.0.2",
     "json-schema-to-typescript": "^6.0.2",
-    "mongoose": "5.9.15",
+    "mongoose": "5.7.7",
     "mongoose-ajv-plugin": "sevenbitbyte/mongoose-ajv-plugin#dep-update",
     "mongoose-schema-jsonschema": "1.2.1"
   }
