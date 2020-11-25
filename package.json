@@ -32,6 +32,6 @@
     "mongoose-schema-jsonschema": "1.2.1",
     "promise": "8.0.1",
     "request": "2.85.0",
-    "@dataparty/bouncer-model": "1.0.0"
+    "@dataparty/bouncer-model": "1.4.3"
   }
 }
